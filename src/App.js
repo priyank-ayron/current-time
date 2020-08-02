@@ -11,11 +11,12 @@ const App = () => {
     setctime(newCtime);
   };
 
+  setInterval(updateTime, 1000);
+
   return (
     <>
       <div className="heading">
         <h1>{ctime}</h1>
-        <button onClick={updateTime}>Click me</button>
       </div>
     </>
   );
